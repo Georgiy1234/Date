@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day Of Date</title>
+    <link rel="stylesheet" href="style.css">
+     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav>
+        <button data-page="home">Main page</button>
+        <button data-page="questions">questions</button>
+        <button data-page="contact">Contacts</button>
+    </nav>
+
+    <div id="home" class="page active">
+        <h1>Hello!!!</h1>
+        <p>My beauty, you've received an invitation to a date, but first I have a few questions for you.</p>
+    </div>
+
+<div id="questions" class="page">
+    <h1>💌 A few questions</h1>
+    <p>Choose the option that is closest to you. 💖</p>
+    <form id="quizForm">
+        <!-- Вопрос 1 -->
+        <div class="question">
+            <label>1. Choose the dish that you like best.</label>
+            <div class="options">
+                <label><input type="radio" name="food" value="pizza"> pizza 🍕</label>
+                <label><input type="radio" name="food" value="sushi"> sushi 🍣</label>
+                <label><input type="radio" name="food" value="pasta"> pasta 🍝</label>
+            </div>
+        </div>
+
+        <!-- Вопрос 2 -->
+        <div class="question">
+            <label>2. Please choose a time when I can pick you up.</label>
+            <div class="options">
+                <label><input type="radio" name="music" value="15"> 15 🕒</label>
+                <label><input type="radio" name="music" value="16"> 16 🕓</label>
+                <label><input type="radio" name="music" value="17"> 17 🕔</label>
+            </div>
+        </div>
+
+        <!-- Вопрос 3 -->
+        <div class="question">
+            <label>3. What do you want to do more?</label>
+            <div class="options">
+                <label><input type="radio" name="hobby" value="watch a movie"> Watch a movie 🎬</label>
+                <label><input type="radio" name="hobby" value="walking in the park and drinking bubble tea"> Walking in the park and drinking bubble tea 🌳</label>
+                <label><input type="radio" name="hobby" value="play a game console"> Play a game console 🎮</label>
+            </div>
+        </div>
+
+        <button type="button" id="submitQuiz">send responses</button>
+        <p id="quizResult"></p>
+    </form>
+</div>
+    <div id="contact" class="page">
+        <h1>Contacts</h1>
+        <p>Your boy</p>
+        <p>Number: +79041075443</p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
